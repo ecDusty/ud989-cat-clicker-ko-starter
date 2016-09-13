@@ -6,13 +6,13 @@
 </head>
 <body>
     <ul id="cat-list"></ul>
-    <div id="cat">
+    <div id="cat" data-bind="with:curCat">
 
-        <h2 id="cat-name" data-bind="text: curCat().fullName"></h2>
-        <h3 id="cat-lvl" data-bind="text: curCat().title"></h3>
-        <div id="cat-count" data-bind="text: curCat().clickCount"></div>
-        <img id="cat-img" src="" alt="cute cat" data-bind="attr: {src: curCat().imgSrc}, click: incrementCounter">
-        <ul data-bind="foreach: curCat().nickNames">
+        <h2 id="cat-name" data-bind="text: fullName"></h2>
+        <h3 id="cat-lvl" data-bind="text: title"></h3>
+        <div id="cat-count" data-bind="text: clickCount"></div>
+        <img id="cat-img" src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}">
+        <ul data-bind="foreach: nickNames">
           <li data-bind="text: nName"></li>
         </ul>
 
