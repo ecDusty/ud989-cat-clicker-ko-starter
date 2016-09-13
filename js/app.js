@@ -1,10 +1,13 @@
-var ViewModel = function() {
+var Cat = function() {
   this.clickCount = ko.observable(0);
   this.nameFirst = ko.observable('Tabby');
   this.nameLast = ko.observable('Macalligan');
   this.fullName = ko.pureComputed(function() {
     return this.nameFirst() + " " + this.nameLast();
   }, this);
+
+  this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
+  this.imgAttribution = ko.observable('images url source');
 
   this.title = ko.computed(function() {
     var rank = '';
@@ -24,11 +27,20 @@ var ViewModel = function() {
     return rank;
   }, this)
 
-  this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
-  this.imgAttribution = ko.observable('images url source');
+  this.nickNames = ko.observableArray([
+    { nName: "Mr. Biggles Worth" },
+    { nName: "Tina Fey" },
+    { nName: "T to the F" }
+  ])
+}
+
+
+var ViewModel = function() {
+
+  this.curCat = ko.observable(new Cat());
 
   this.incrementCounter = function() {
-    this.clickCount(this.clickCount() + 1);
+    this.curCat().clickCount(this.curCat().clickCount() + 1);
   };
 }
 
