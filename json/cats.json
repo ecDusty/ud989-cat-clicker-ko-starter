@@ -1,0 +1,28 @@
+{
+  "cats": [
+    {
+      "clickCount": 0,
+      "nameFirst": "Tabby",
+      "nameLast": "Macalligan",
+      "imgSrc": "img/434164568_fea0ad4013_z.jpg",
+      "imgAttribution": "images url source",
+      "nickNames": ["Mr. Biggles Worth", "Tina Fey", "T to the F"]
+    },
+    {
+      "clickCount": 0,
+      "nameFirst": "Panthy",
+      "nameLast": "Macalligan",
+      "imgSrc": "img/434164568_fea0ad4013_z.jpg",
+      "imgAttribution": "images url source",
+      "nickNames": ["Mr. Dribbles Worth", "Drooly Magie", "Drippy"]
+    },
+    {
+      "clickCount": 0,
+      "nameFirst": "Sleepy",
+      "nameLast": "Macalligan",
+      "imgSrc": "img/434164568_fea0ad4013_z.jpg",
+      "imgAttribution": "images url source",
+      "nickNames": ["zzzzz", "nappy", "I'm always in your bed"]
+    }
+  ]
+}
