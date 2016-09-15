@@ -24,15 +24,19 @@ var Cat = function(data) {
     var rank = '';
 
     if (this.clickCount() < 10) {
-      rank = 'Beginner';
+      rank = 'Baby Kitten';
     } else if (this.clickCount() < 20) {
-      rank = 'Padawan';
+      rank = 'Padawan Kitten';
+    } else if (this.clickCount() < 35) {
+      rank = 'Teenage Padawan Kitten';
+    } else if (this.clickCount() < 45) {
+      rank = 'Teenage Padawan Cat';
     } else if (this.clickCount() < 60) {
-      rank = 'Intermediate';
-    } else if (this.clickCount() < 100) {
-      rank = 'Pro';
-    } else {
-      rank = 'Jedi Knight';
+      rank = 'Jedi Knight Cat';
+    } else if (this.clickCount() < 130) {
+      rank = 'Jedi Knight Elite Cat';
+    } else if (this.clickCount() < 250) {
+      rank = 'Jedi Master, Chair of the Counsil';
     }
 
     return rank;
